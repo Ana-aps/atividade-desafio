@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pizzaria</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+
+            <i class="fa-solid fa-pizza-slice"></i>
+
+            <span>Pizzaria</span>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#beneficios">Benefícios</a>
+
+            <a href="#sabores">Sabores</a>
+
+            <a href="#depoimentos">Depoimentos</a>
+
+            <a href="#formulario">Peça já</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        <section id="inicio" class="hero">
+
+            <h1>
+                A melhor pizza!
+            </h1>
+
+        </section>
+
+
+
+        <section id="beneficios">
+
+            <h2>
+                Por que escolher nossa pizzaria?
+            </h2>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <i class="fa-solid fa-pizza-slice"></i>
+
+                    <p>
+                        Ingredientes frescos
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <i class="fa-solid fa-motorcycle"></i>
+
+                    <p>
+                        Entrega rápida
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <p>
+                        Sabor inigualável
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section id="sabores">
+
+            <h2>
+                Nossos Sabores
+            </h2>
+
+
+            <div class="sabores-container">
+
+                <button type="button">
+                    Calabresa
+                </button>
+
+                <button type="button">
+                    Margherita
+                </button>
+
+                <button type="button">
+                    Frango com Catupiry
+                </button>
+
+                <button type="button">
+                    Portuguesa
+                </button>
+
+                <button type="button">
+                    Vegetariana
+                </button>
+
+            </div>
+
+        </section>
+
+
+ <section id="depoimentos">
+
+    <h2>
+        O que nossos clientes dizem
+    </h2>
+
+    <article class="depoimento">
+
+        <img
+            src="img/joao.png"
+            alt="Foto do cliente João"
+            id="fotoDepoimento"
+        >
+
+        <p id="textoDepoimento">
+            "Entrega super rápida, recomendo demais!"
+        </p>
+
+        <p id="nomeDepoimento">
+            João
+        </p>
+
+        <div class="botoes">
+
+            <button type="button" id="anterior">
+                Anterior
+            </button>
+
+            <button type="button" id="proximo">
+                Próximo
+            </button>
+
+        </div>
+
+    </article>
+
+</section>
+
+        <section id="formulario">
+
+            <h2>
+                Peça já a sua pizza!
+            </h2>
+
+
+            <form
+                action="obrigado.html"
+                method="get"
+            >
+
+                <input
+                    type="text"
+                    name="nome"
+                    placeholder="Nome completo"
+                    required
+                >
+
+                <input
+                    type="tel"
+                    name="telefone"
+                    placeholder="Telefone"
+                    required
+                >
+
+
+
+                <input
+                    type="text"
+                    name="endereco"
+                    placeholder="Endereço de entrega"
+                    required
+                >
+
+                <select
+                    name="sabor"
+                    required
+                >
+
+                    <option value="">
+                        Escolha o sabor
+                    </option>
+
+                    <option value="calabresa">
+                        Calabresa
+                    </option>
+
+                    <option value="margherita">
+                        Margherita
+                    </option>
+
+                    <option value="frango-catupiry">
+                        Frango com Catupiry
+                    </option>
+
+                    <option value="portuguesa">
+                        Portuguesa
+                    </option>
+
+                    <option value="vegetariana">
+                        Vegetariana
+                    </option>
+
+                </select>
+
+
+                <fieldset>
+
+                    <legend>
+                        Forma de pagamento:
+                    </legend>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="pagamento"
+                            value="dinheiro"
+                            required
+                        >
+
+                        Dinheiro
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="pagamento"
+                            value="cartao"
+                        >
+
+                        Cartão
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="radio"
+                            name="pagamento"
+                            value="pix"
+                        >
+
+                        Pix
+
+                    </label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>
+                        Adicionais:
+                    </legend>
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            name="adicionais"
+                            value="borda-recheada"
+                        >
+
+                        Borda recheada
+
+                    </label>
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            name="adicionais"
+                            value="bebida"
+                        >
+
+                        Bebida
+
+                    </label>
+
+                </fieldset>
+
+                <a href="obrigado.html"><button type="submit">
+
+                    Enviar Pedido
+
+                </button></a>
+
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+        <h3>
+            Pizzaria
+        </h3>
+
+
+        <p>
+            Siga-nos nas redes sociais
+        </p>
+
+
+        <div class="redes-sociais">
+
+            <a href="#" aria-label="Instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <a href="#" aria-label="Facebook">
+
+                <i class="fa-brands fa-facebook"></i>
+
+            </a>
+
+
+            <a href="#" aria-label="WhatsApp">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+        </div>
+
+
+        <p>
+            &copy; 2026 Pizzaria
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
